@@ -1,0 +1,18 @@
+{
+  "name": "split-brain",
+  "version": "1.0.0",
+  "description": "Easy, declarative code splitting for React and Webpack. Best used in conjunction with babel-plugin-split-brain",
+  "main": "lib/index.js",
+  "repository": "git@github.com:mprast/split-brain.git",
+  "author": "Matt Prast <mprast@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-latest": "^6.22.0",
+    "react": "^15.4.2"
+  },
+  "scripts": {
+    "build": "yarn run babel -- src -d lib",
+    "prepublish": "yarn build"
+  }
+}
