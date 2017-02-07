@@ -19,9 +19,6 @@ const SplitBrain = {
 
         render() {
             if(this.state.child) {
-                if (this.state.child.length() != 1) {
-                    throw new Error("A Chunk element should have exactly one child.");
-                }
                 return React.Children.only(this.state.child);
             }
 
@@ -42,10 +39,7 @@ const SplitBrain = {
     },
     Passthrough: class Passthrough extends Component {
         render() {
-            if (this.state.child.length != 1) {
-                throw new Error("A Chunk element should have exactly one child.");
-            }
-            return React.Children.only(this.state.child);
+            return React.Children.only(this.props.children);
         }
     }
 }
