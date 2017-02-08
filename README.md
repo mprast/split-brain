@@ -50,9 +50,10 @@ Easy peasy!
                             "Four": "components/four.js"}}>
   <One>
     <Two>
-    <Three>
-      <Four/>
-    </Three>
+      <Three>
+        <Four/>
+      </Three>
+    </Two>
   </One>
 </SplitBrain.Chunk>
 
