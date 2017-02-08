@@ -37,7 +37,7 @@ class Test extends Component {
 ```
 
 webpack would create a new bundle with just `lazy.js` inside, and that bundle would get lazy-loaded when you clicked 'Go'.
-Easy peasy!
+The `Chunk` element just returns its children when it renders, it's totally transparent. 
 
 ## In-depth Usage
 - Put whatever you want inside of SplitBrain. Have nested elements or an expression container:
